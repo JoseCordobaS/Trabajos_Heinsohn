@@ -3,7 +3,11 @@ package com.heinsohn.semillero.roedores;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/**
+ * Clase test que contiene el metodo statico main para la ejecución.
+ * @author josem
+ *
+ */
 
 public class Test {
 
