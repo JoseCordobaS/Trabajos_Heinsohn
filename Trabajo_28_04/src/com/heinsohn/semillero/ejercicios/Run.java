@@ -3,7 +3,11 @@ package com.heinsohn.semillero.ejercicios;
 import java.util.*;
 
 import com.sun.org.apache.xalan.internal.xsltc.compiler.sym;
-
+/**
+ * Clase main creada para la ejecución, contiene metodos estaticos con diferentes funcionalidades.
+ * @author josem
+ *
+ */
 public class Run {
 
 	public static void main(String[] args) {
@@ -15,7 +19,7 @@ public class Run {
 
 		while(menu==true) {
 			System.out.println("Menú básico ejercicios 24 de Abril:\n"
-					+ "1. Separar fecha 22/07/1997 \n"
+					+ "1. Separar fecha \"22/07/1997\" \n"
 					+ "2. Sumar enteros\n"
 					+ "3. Sumar precios y decir el mayor\n"
 					+ "4. SALIR\n");
@@ -26,7 +30,7 @@ public class Run {
 				System.out.println(cadenaFecha()+"\n");
 				break;
 			case "2":
-				System.out.println(sumarEnteros()+"\n");
+				System.out.println("El resultado de la suma es: "+sumarEnteros()+"\n"); 		
 				break;
 			case "3":
 				System.out.println(calcularPrecio()+"\n");
@@ -41,11 +45,14 @@ public class Run {
 
 	}
 
+	/**Método que separa los valores del día,mes y año por medio de un token "/"
+	 * 
+	 * @return String, cadena con la fecha separada por espacios
+	 */
 	public static String cadenaFecha() {
 		String fecha = "22/07/1997";
 
 		String dia, mes, año, cadenaFecha;
-		double[] fecha_separada;
 
 		StringTokenizer tokens = new StringTokenizer(fecha, "/");
 		dia = tokens.nextToken();
@@ -56,7 +63,11 @@ public class Run {
 		return cadenaFecha;
 	}
 
-	public static String sumarEnteros() {
+	/**Método que realiza la suma de 5 enteros contenidos en un arreglo y retorna su resultado
+	 * 
+	 * @return int, resultado de la suma de los números del arreglo
+	 */
+	public static int sumarEnteros() {
 
 		int suma = 0;
 		String cSuma;
@@ -64,9 +75,16 @@ public class Run {
 		for (int i = 0; i < numeros.length; i++) {
 			suma += numeros[i];
 		}
-		cSuma = "El resultado de la suma es: " + suma;
-		return cSuma;
+		return suma;
 	}
+	
+	/**Método que lee 5 precios por consola y realiza la suma de estos, si la suma total es mayor a 300
+	 * le suma el 10% del precio total, de lo contrario solo suma el 7%. 
+	 * 
+	 * También el método indica cual fue el precio más alto ingresado.
+	 * 
+	 * @return
+	 */
 	
 	public static String calcularPrecio() {
 
