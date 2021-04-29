@@ -1,4 +1,7 @@
 # Trabajos_Heinsohn
+
+Repositorio de JOSÉ MANUEL CÓRDOBA SANDOVAL
+
 Repositorio creado para versionar cada trabajo realizado en el semillero java de Heinsohn 2021
 
 Carpeta Trabajo28_04 contiene un proyecto realizado en java con 3 ejercicios dispuestos en la clase, en una clase main llamada Run.
