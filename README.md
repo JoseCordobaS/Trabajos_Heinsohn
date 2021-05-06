@@ -10,5 +10,4 @@ Carpeta Roedores contiene un trabajo de herencia con una clase padre llamada Roe
 
 Carpeta consultas mysql contiene el ejercicio de la conexión de base de datos (Utilizando jdbc) y consultas realizadas desde java.
 
-Carpeta Restaurante-Semillero incluye los archivos necesarios para realizar la conexión y consultas a la base de datos mysql, para poder realizar un crud de usuarios
-utilizando como framework spring y la herramienta swagger para hacer la documentación.
+Carpeta Restaurante-Semillero incluye los archivos necesarios para realizar la conexión y consultas a la base de datos mysql(Se debe tener un esquema creado con el nombre "db_restaurante"), para poder realizar un crud de usuarios utilizando como framework spring y la herramienta swagger para hacer la documentación.
